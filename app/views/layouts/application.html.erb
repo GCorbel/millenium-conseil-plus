@@ -15,13 +15,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            ja class="brand" href="index.html">Bootflag</a>
+            <%= link_to "Conseil Expert Plus", @home, class: 'brand' %>
             <div class="nav-collapse collapse navigation-top pull-right">
               <ul class="nav">
-                <li><a href="who-we-are.html">Who We Are</a></li>
-                <li><a href="what-we-do.html">What We Do</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <% refinery_menu_pages.each do |page| %>
+                  <li><%= link_to page.title, page.url %></li>
+                <% end %>
               </ul>
             </div>
           </div>
