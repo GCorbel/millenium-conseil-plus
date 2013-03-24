@@ -40,13 +40,13 @@
   <div class="span12">
     <div class="row-fluid">
       <div class="span4">
-        <%= editable(@page) { @page.content_for(:part1) } %>
+        <%= editable(@page, method: 'part1') { @page.content_for(:part1) } %>
       </div>
       <div class="span4">
-        <%= editable(@page) { @page.content_for(:part2) } %>
+        <%= editable(@page, method: 'part2') { @page.content_for(:part2) } %>
       </div>
       <div class="span4">
-        <%= editable(@page) { @page.content_for(:part3) } %>
+        <%= editable(@page, method: 'part3') { @page.content_for(:part3) } %>
       </div>
     </div><!-- end row-fluid -->
   </div><!-- end span12 -->
