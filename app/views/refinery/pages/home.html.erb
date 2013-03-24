@@ -1,0 +1,16 @@
+<div class="row-fluid front-content">
+  <div class="span12">
+    <div class="row-fluid">
+      <div class="span4">
+        <%= editable(@page, method: 'part1') { @page.content_for(:part1) } %>
+      </div>
+      <div class="span4">
+        <%= editable(@page, method: 'part2') { @page.content_for(:part2) } %>
+      </div>
+      <div class="span4">
+        <%= editable(@page, method: 'part3') { @page.content_for(:part3) } %>
+      </div>
+    </div><!-- end row-fluid -->
+  </div><!-- end span12 -->
+</div><!-- end front-content -->
+<%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>
