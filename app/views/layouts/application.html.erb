@@ -53,5 +53,13 @@
   <%= render 'refinery/footer' %>
   <%= render '/refinery/javascripts' %>
   <script>$('.carousel').carousel({interval: 2000})</script>
+  <script>
+    $.ajaxSetup({
+      beforeSend: function(xhr) {
+        this.url = '/<%= Refinery::I18n.current_frontend_locale %>' + this.url;
+        return xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
+      },
+    });
+  </script>
 </body>
 </html>
