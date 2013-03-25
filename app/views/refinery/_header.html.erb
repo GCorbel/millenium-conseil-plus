@@ -1,7 +1,18 @@
-<h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1>
-<%= render(:partial => "/refinery/menu", :locals => {
-             :dom_id => 'menu',
-             :css => 'menu'
-           }) %>
+<%= link_to "Conseil Expert Plus", @home, class: 'brand' %>
+<div class="nav-collapse collapse navigation-top pull-right">
+  <ul class="nav">
+    <% refinery_menu_pages.each do |page| %>
+      <li><%= link_to page.title, page.url %></li>
+    <% end %>
+
+    <li>
+      <% if Refinery::I18n.current_frontend_locale == :fr %>
+        <%= link_to 'English Version',
+               refinery.url_for(params.merge(locale: 'en')) %>
+      <% else %>
+        <%= link_to 'Version Française',
+               refinery.url_for(params.merge(locale: 'fr')) %>
+      <% end %>
+    </li>
+  </ul>
+</div>
