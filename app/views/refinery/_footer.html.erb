@@ -1,0 +1,27 @@
+<div class="row-fluid footer">
+  <div class="footer-wrap">
+    <div class="span6">
+      <h2>Bootflag</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div><!-- end span6 -->
+    <div class="span6 footer-address">
+      <h2>Contact Us</h2>
+      <div class="">
+        <i class="icon-home icon-white"></i>
+        <p>795 Folsom Ave, Suite 600 San Francisco, CA 94107<br>Phone: (123) 456-7890<br>Fax: (123) 456-7890</p>
+      </div>
+      <div class="">
+        <i class="icon-envelope icon-white"></i><p>email@bootflag.com</p>
+      </div>
+      <div class="footer-sosio">
+        <img src="/assets/fb.png" alt="facebook" title="facebook"><img src="/assets/twitter.png" alt="twitter" title="twitter">
+      </div>
+    </div><!-- end footer address -->
+    <div class="span12">
+      <div class="footer-copyright">
+        <%= t('.copyright', year: Time.now.year,
+              site_name: Refinery::Core.site_name) %>
+      </div>
+    </div><!-- end span12 -->
+  </div><!-- end footer wrap -->
+</div><!-- end footer -->
