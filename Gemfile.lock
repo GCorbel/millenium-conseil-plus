@@ -116,6 +116,7 @@ GEM
     excon (0.16.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    filters_spam (0.3)
     fog (1.9.0)
       builder
       excon (~> 0.14)
@@ -217,8 +218,14 @@ GEM
     refinerycms-i18n (2.0.2)
       refinerycms-core (~> 2.0.0)
       routing-filter (>= 0.2.3)
+    refinerycms-inquiries (2.0.3)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 2.0.1)
+      refinerycms-settings (~> 2.0.1)
     refinerycms-page-images (2.0.1)
       refinerycms-pages (~> 2.0.0)
+    refinerycms-settings (2.0.2)
+      refinerycms-core (~> 2.0.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     routing-filter (0.3.1)
@@ -285,6 +292,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   refinerycms (~> 2.0.0)!
   refinerycms-i18n (~> 2.0.0)
+  refinerycms-inquiries (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
   sass-rails (~> 3.2.3)
   sqlite3
