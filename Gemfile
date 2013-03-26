@@ -35,6 +35,8 @@ gem 'jquery-ui-rails'
 group :test, :development do
   gem 'pry'
   gem 'pry-nav'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 # To use ActiveModel has_secure_password
@@ -58,7 +60,7 @@ gem 'refinerycms', '~> 2.0.0', :git => 'git://github.com/refinery/refinerycms.gi
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
-gem 'refinerycms-inquiries', git: 'git://github.com/refinery/refinerycms-inquiries.git'
+gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'twitter-bootstrap-rails'
